@@ -24,13 +24,14 @@ CREATE TABLE Contacts (
 select * from contacts;
 
 CREATE TABLE Campaign (
-    cf_id INT NOT NULL,
-    contact_id INT PRIMARY KEY,
+    cf_id INT PRIMARY KEY,
+    contact_id INT NOT NULL,
     company_name VARCHAR(255) NOT NULL,
-    description TEXT,
-    goal DECIMAL(12, 2) NOT NULL,
-    pledged DECIMAL(12, 2),
-    outcome VARCHAR(20) NOT NULL,
+    description TEXT NOT NULL,
+    goal FLOAT NOT NULL,
+    pledged FLOAT NOT NULL,
+    outcome TEXT NOT NULL  
+		CHECK (outcome IN ('failed', 'successful', 'live', 'canceled')),
     backers_count INT NOT NULL,
     country VARCHAR(2) NOT NULL,
     currency VARCHAR(3) NOT NULL,
