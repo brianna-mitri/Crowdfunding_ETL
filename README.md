@@ -1,5 +1,5 @@
 # Crowdfunding_ETL
-An ETL pipeline was built using Python and SQL. The raw data files were first transformed and normalized into tables. Then and Entity Relationship Diagram (ERD) was defined for the tables and the database was created in PostgreSQL.
+An ETL pipeline was built using Python and SQL. The raw data files were first transformed and normalized into tables. Then an Entity Relationship Diagram (ERD) was defined for the tables and the database was created in PostgreSQL.
 
 ## Steps
 1) Run the Jupyter notebooks to generate the output table files
