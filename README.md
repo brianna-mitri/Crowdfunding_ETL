@@ -1,4 +1,11 @@
 # Crowdfunding_ETL
+An ETL pipeline was built using Python and SQL. The raw data files were first transformed and normalized into tables. Then and Entity Relationship Diagram (ERD) was defined for the tables and the database was created in PostgreSQL.
+
+## Steps
+1) Run the Jupyter notebooks to generate the output table files
+2) Create the database in PostgreSQL
+3) Run the SQL file (crowdfunding_db_schema.sql) to create the tables and relationships in the database
+4) Import the data from the Output folder into the appropriate tables
 
 ## Files
 The files are organized as follows:
